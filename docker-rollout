@@ -136,6 +136,7 @@ main() {
 
   echo "==> Stopping and removing old containers"
 
+  sleep 30
   # shellcheck disable=SC2086 # DOCKER_ARGS and OLD_CONTAINER_IDS must be unquoted to allow multiple arguments
   docker $DOCKER_ARGS stop $OLD_CONTAINER_IDS
   # shellcheck disable=SC2086 # DOCKER_ARGS and OLD_CONTAINER_IDS must be unquoted to allow multiple arguments
