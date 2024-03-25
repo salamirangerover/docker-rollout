@@ -134,7 +134,7 @@ main() {
     sleep "$NO_HEALTHCHECK_TIMEOUT"
   fi
 
-  echo "==> Wait 30 seconds before stopping old containers"
+  echo "==> Waiting 30 seconds before stopping old containers"
   sleep 30
 
   echo "==> Stopping and removing old containers"
